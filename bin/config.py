@@ -143,6 +143,7 @@ class ConfigTab(object):
 
         self.toggle_svg = Checkbox(
             description='Cells',    # SVG
+            disabled=True,
             layout=Layout(width='150px') )  # constWidth = '180px'
         # self.svg_t0 = BoundedFloatText (
         #     min=0,
@@ -153,6 +154,7 @@ class ConfigTab(object):
             min=0.001,
             max=99999999,   # TODO: set max on all Bounded to avoid unwanted default
             description='every',
+            disabled=True,
             layout=Layout(width='160px'),
         )
         self.mcds_interval = BoundedFloatText(
